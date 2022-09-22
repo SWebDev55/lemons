@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Pure Juice</title>
+</head>
+<body>
+    <header class="bg-white shadow">
+        <div class="main-box max-w-6xl m-auto py-2 flex justify-between items-center">
+            <div class="logo text-3xl text-yellow-300 font-bold flex items-center"><img src="./img/lemons.png" alt="" class="w-12">Lemons.</div>
+            <div class="menu" id="myNav">
+                <div class="close-menu bg-gray-500 text-white w-10 h-10 p-1 flex justify-center items-center rounded text-2xl hidden closebtn" onclick="closeNav()">
+                    <i class="fa fa-times"></i>
+                </div>
+                <ul>
+                    <li class="inline-block"><a href="#home" class="block text-lg text-gray-700 py-2 px-5">Home</a></li>
+                    <li class="inline-block"><a href="#shop" class="block text-lg text-gray-700 py-2 px-5">Shop</a></li>
+                    <li class="inline-block"><a href="#about" class="block text-lg text-gray-700 py-2 px-5">About</a></li>
+                    <li class="inline-block"><a href="#contact" class="block text-lg text-gray-700 py-2 px-5">Contact</a></li>
+                    <li class="inline-block"><a href="#" class="block text-lg text-gray-700 py-2 px-5">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="open-menu bg-gray-500 text-white w-10 h-10 p-1 flex justify-center items-center rounded text-2xl hidden" onclick="openNav()">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <div class="banner max-w-6xl m-auto flex pt-20" id="home">
+        <div class="hero" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+            <img src="./img/banner.png" alt="" class="w-full">
+        </div>
+        <div class="text-detail" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
+            <h1 class="text-6xl text-green-800 font-bold">Fresh lemons and oranges. No additives. Straight to your door.</h1>
+            <div class="mt-10 w-32 bg-green-500 text-center p-3 rounded text-xl font-bold text-white">
+                <a href="#">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-1 max-w-6xl m-auto pt-20" id="shop">
+        <h1 class="text-4xl text-gray-500 text-center border-b-2 py-2">Shops</h1>
+        <div class="main-box mt-5 inline-block">
+            <div class="box w-1/4 p-3 float-left" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="box-product shadow text-center pb-2 relative">
+                    <div class="new absolute top-0 left-0 p-1 w-12 bg-green-500 rounded-r text-white">
+                        <p class="text-sm">New</p>
+                    </div>
+                    <img src="./img/1.webp" alt="" class="w-full">
+                    <h1 class="text-md py-2">Good For Health</h1>
+                    <p class="py-2">$ 4.99 US</p>
+                    <div class="bg-yellow-600 w-32 text-white rounded p-1 m-auto">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box w-1/4 p-3 float-left" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="box-product shadow text-center pb-2 relative">
+                    <div class="new absolute top-0 left-0 p-1 w-12 bg-green-500 rounded-r text-white">
+                        <p class="text-sm">New</p>
+                    </div>
+                    <img src="./img/2.webp" alt="" class="w-full">
+                    <h1 class="text-md py-2">Good For Health</h1>
+                    <p class="py-2">$ 4.99 US</p>
+                    <div class="bg-yellow-600 w-32 text-white rounded p-1 m-auto">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box w-1/4 p-3 float-left" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="box-product shadow text-center pb-2 relative">
+                    <div class="new absolute top-0 left-0 p-1 w-12 bg-green-500 rounded-r text-white">
+                        <p class="text-sm">New</p>
+                    </div>
+                    <img src="./img/3.webp" alt="" class="w-full">
+                    <h1 class="text-md py-2">Good For Health</h1>
+                    <p class="py-2">$ 4.99 US</p>
+                    <div class="bg-yellow-600 w-32 text-white rounded p-1 m-auto">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box w-1/4 p-3 float-left" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="box-product shadow text-center pb-2 relative">
+                    <div class="new absolute top-0 left-0 p-1 w-12 bg-green-500 rounded-r text-white">
+                        <p class="text-sm">New</p>
+                    </div>
+                    <img src="./img/4.webp" alt="" class="w-full">
+                    <h1 class="text-md py-2">Good For Health</h1>
+                    <p class="py-2">$ 4.99 US</p>
+                    <div class="bg-yellow-600 w-32 text-white rounded p-1 m-auto">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box w-1/4 p-3 float-left" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="box-product shadow text-center pb-2 relative">
+                    <div class="new absolute top-0 left-0 p-1 w-12 bg-green-500 rounded-r text-white">
+                        <p class="text-sm">New</p>
+                    </div>
+                    <img src="./img/5.webp" alt="" class="w-full">
+                    <h1 class="text-md py-2">Good For Health</h1>
+                    <p class="py-2">$ 4.99 US</p>
+                    <div class="bg-yellow-600 w-32 text-white rounded p-1 m-auto">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box w-1/4 p-3 float-left" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="box-product shadow text-center pb-2 relative">
+                    <div class="new absolute top-0 left-0 p-1 w-12 bg-green-500 rounded-r text-white">
+                        <p class="text-sm">New</p>
+                    </div>
+                    <img src="./img/6.webp" alt="" class="w-full">
+                    <h1 class="text-md py-2">Good For Health</h1>
+                    <p class="py-2">$ 4.99 US</p>
+                    <div class="bg-yellow-600 w-32 text-white rounded p-1 m-auto">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box w-1/4 p-3 float-left" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="box-product shadow text-center pb-2 relative">
+                    <div class="new absolute top-0 left-0 p-1 w-12 bg-green-500 rounded-r text-white">
+                        <p class="text-sm">New</p>
+                    </div>
+                    <img src="./img/2.webp" alt="" class="w-full">
+                    <h1 class="text-md py-2">Good For Health</h1>
+                    <p class="py-2">$ 4.99 US</p>
+                    <div class="bg-yellow-600 w-32 text-white rounded p-1 m-auto">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box w-1/4 p-3 float-left" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="box-product shadow text-center pb-2 relative">
+                    <div class="new absolute top-0 left-0 p-1 w-12 bg-green-500 rounded-r text-white">
+                        <p class="text-sm">New</p>
+                    </div>
+                    <img src="./img/5.webp" alt="" class="w-full">
+                    <h1 class="text-md py-2">Good For Health</h1>
+                    <p class="py-2">$ 4.99 US</p>
+                    <div class="bg-yellow-600 w-32 text-white rounded p-1 m-auto">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-2 max-w-6xl m-auto pt-20" id="about">
+        <h1 class="text-4xl text-gray-500 text-center border-b-2 py-2">About Us</h1>
+        <div class="main-box inline-block pt-20">
+            <div class="box text-about float-left w-1/2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                <h1 class="text-4xl text-gray-500">OUR STORY</h1>
+                <p class="text-lg text-gray-400 py-10">Orange juice is a favorite beverage high in antioxidants and micronutrients like vitamin C, folate, and potassium. Regular consumption has been associated with several health benefits, including improved heart health, decreased inflammation, and a reduced risk of kidney stones.</p>
+            </div>
+            <div class="box img float-left w-1/2" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="w-64">
+                    <img src="./img/about.webp" alt="" class="w-full">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-3 max-w-6xl m-auto pt-20" id="contact">
+        <h1 class="text-4xl text-gray-500 text-center border-b-2 py-2">Contact Us</h1>
+        <div class="main-box flex pt-20">
+            <div class="box w-1/2 p-5" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                <h1 class="text-4xl text-gray-500 pb-10">Contact Info</h1>
+                <p class="text-lg text-gray-400 py-4">500 Terry Francois St.</p>
+                <p class="text-lg text-gray-400 py-4">San Francisco, CA 94158</p>
+                <p class="text-lg text-gray-400 py-4">info@mysite.com</p>
+                <p class="text-lg text-gray-400 py-4">Tel: 123-456-7890</p>
+                <iframe class="w-full h-64" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125128.09133589437!2d104.76053566566617!3d11.461666264327297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109451d67d18c71%3A0x5424fff2a6f80e1c!2sSleng%20Pagoda!5e0!3m2!1sen!2skh!4v1663817895194!5m2!1sen!2skh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="box w-1/2 p-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
+                <form action="#">
+                    <label for="#">First Name</label>
+                    <input type="text" placeholder="First Name" class="border-2 outline-0 p-3 my-2 w-full">
+                    <label for="#">Last Name</label>
+                    <input type="text" placeholder="Last Name" class="border-2 outline-0 p-3 my-2 w-full">
+                    <label for="#">Email</label>
+                    <input type="text" placeholder="Email" class="border-2 outline-0 p-3 my-2  w-full">
+                    <label for="#">Messages</label>
+                    <textarea name="#" id="" cols="30" rows="10" placeholder="Messages" class="border-2 outline-0 w-full my-2 p-3"></textarea>
+                    <button class="bg-green-500 p-2 w-32 rounded text-white font-bold">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white shadow border">
+        <div class="main-box max-w-6xl m-auto flex justify-between items-center py-5">
+            <div class="privacy">
+                © 2023 by Pure Juice. Proudly created with Visual Studio Code
+            </div>
+            <div class="follow">
+                <a href="#"><i class="p-3 bg-gray-200 rounded-full fab fa-facebook"></i></a>
+                <a href="#"><i class="p-3 bg-gray-200 rounded-full fab fa-twitter"></i></a>
+                <a href="#"><i class="p-3 bg-gray-200 rounded-full fab fa-instagram"></i></a>
+                <a href="#"><i class="p-3 bg-gray-200 rounded-full fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

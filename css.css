@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.banner .hero{
+    width: 100%;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    header .main-box .open-menu,
+    header .main-box .close-menu{
+        display: block !important;
+        text-align: center;
+    }
+    header .main-box{
+        padding: 10px;
+    }
+    header .main-box .menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        z-index: 100;
+        width: 0%;
+        overflow-x: hidden;
+        transition: 0.3s;
+        background-color: #fff;
+    }
+    header .main-box .menu ul{
+        margin: 0;
+        padding: 0;
+    }
+    header .main-box .menu ul li{
+        width: 100%;
+        display: block;
+    }
+    header .main-box .menu .close-menu{
+        margin: 10px;
+    }
+    .banner{
+        width: 100%;
+        display: block !important;
+    }
+    .banner .text-detail h1{
+        font-size: 45px;
+    }
+
+    .blog-1,
+    .blog-2,
+    .blog-3{
+        width: 100%;
+        padding: 5px !important;
+    }
+    .blog-1 .main-box .box{
+        width: 50%;
+        padding: 5px !important;
+    }
+    .blog-2 .main-box .box{
+        width: 100%;
+    }
+    .blog-3 .main-box{
+        display: block;
+    }
+    .blog-3 .main-box .box{
+        width: 100%;
+    }
+
+    footer .main-box{
+        width: 100%;
+        padding: 5px !important;
+        display: block;
+        text-align: center;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px){
+    header .main-box .open-menu,
+    header .main-box .close-menu{
+        display: block !important;
+        text-align: center;
+    }
+    header .main-box{
+        padding: 10px;
+    }
+    header .main-box .menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        z-index: 100;
+        width: 0%;
+        overflow-x: hidden;
+        transition: 0.3s;
+        background-color: #fff;
+    }
+    header .main-box .menu ul{
+        margin: 0;
+        padding: 0;
+    }
+    header .main-box .menu ul li{
+        width: 100%;
+        display: block;
+    }
+    header .main-box .menu .close-menu{
+        margin: 10px;
+    }
+    .banner{
+        width: 100%;
+    }
+    .banner .text-detail h1{
+        font-size: 33px;
+    }
+    .banner .hero,
+    .banner .text-detail{
+        width: 50%;
+    }
+
+    .blog-1,
+    .blog-2,
+    .blog-3{
+        width: 100%;
+        padding: 5px !important;
+    }
+    .blog-1 .main-box .box{
+        width: 33.3%;
+        padding: 5px !important;
+    }
+    .blog-2 .main-box .box{
+        width: 50%;
+    }
+    .blog-3 .main-box .box{
+        width: 50%;
+    }
+
+    footer .main-box{
+        width: 100%;
+        padding: 5px !important;
+        display: block;
+        text-align: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .banner{
+        width: 100%;
+    }
+    .banner .text-detail h1{
+        font-size: 55px;
+    }
+    .banner .hero,
+    .banner .text-detail{
+        width: 50%;
+    }
+
+    .blog-1,
+    .blog-2,
+    .blog-3{
+        width: 100%;
+        padding: 5px !important;
+    }
+    .blog-1 .main-box .box{
+        width: 20%;
+        padding: 5px !important;
+    }
+    .blog-2 .main-box .box{
+        width: 50%;
+        text-align: center;
+    }
+    .blog-3 .main-box .box{
+        width: 50%;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1280px){
+    .banner{
+        width: 100%;
+    }
+    .banner .text-detail h1{
+        font-size: 55px;
+    }
+    .banner .hero,
+    .banner .text-detail{
+        width: 50%;
+    }
+
+    .blog-1,
+    .blog-2,
+    .blog-3{
+        width: 100%;
+        padding: 5px !important;
+    }
+    .blog-1 .main-box .box{
+        width: 20%;
+        padding: 5px !important;
+    }
+    .blog-2 .main-box .box{
+        width: 50%;
+        text-align: center;
+    }
+    .blog-3 .main-box .box{
+        width: 50%;
+    }
+}
